@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cold Email Outreach - GetFitech</title>
+  <link rel="icon" type="image/png" href="https://getfitech.co.ke/img/getfitech-logo.ico">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root {
+      --primary: #c0545c;
+    }
+    
+    /* Scroll to top button styles */
+    .scroll-to-top {
+      position: fixed;
+      bottom: 80px;
+      right: 20px;
+      background: var(--primary);
+      color: white;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(20px);
+      transition: all 0.3s ease;
+      z-index: 40;
+    }
+    
+    .scroll-to-top.show {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+    
+    .scroll-to-top:hover {
+      background: #a0454a;
+      transform: translateY(-2px);
+    }
+    
+    @media (max-width: 768px) {
+      .scroll-to-top {
+        bottom: 100px;
+        right: 15px;
+        width: 45px;
+        height: 45px;
+      }
+    }
+
+    /* Smooth scrolling */
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <header class="bg-white shadow" id="top">
+    <div class="max-w-6xl mx-auto flex items-center justify-between p-4">
+      <img src="https://getfitech.co.ke/img/getfitech-logo2.png" alt="GetFitech Logo" class="h-14">
+      <a href="#contact" class="hidden md:inline-block bg-[var(--primary)] text-white px-6 py-2 rounded-lg shadow hover:opacity-90">
+        Book a Free Call
+      </a>
+    </div>
+  </header>
+
+  <section class="text-center py-16 bg-gradient-to-r from-[var(--primary)] to-rose-700 text-white">
+    <div class="max-w-3xl mx-auto px-6">
+      <h1 class="text-4xl md:text-5xl font-bold leading-tight">
+        Done-for-You B2B Cold Email Outreach
+      </h1>
+      <p class="mt-4 text-lg md:text-xl">
+        We set up and run personalized cold email campaigns that bring you new B2B leads on autopilot.
+      </p>
+      <a href="#contact" class="mt-6 inline-block bg-white text-[var(--primary)] font-semibold px-8 py-3 rounded-lg shadow hover:bg-gray-100">
+        Get Started Today
+      </a>
+    </div>
+  </section>
+
+  <section class="py-16 max-w-6xl mx-auto px-6">
+    <h2 class="text-3xl font-bold text-center mb-10">How It Works</h2>
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="bg-white rounded-xl shadow p-6 text-center">
+        <div class="w-16 h-16 mx-auto mb-4 flex items-center justify-center">
+          <img src="list.png" alt="List Icon" class="w-12 h-12">
+        </div>
+        <h3 class="font-semibold text-xl">Step 1: You Provide a List</h3>
+        <p class="mt-2 text-gray-600">We'll guide you on where to source verified B2B prospect lists (Apollo, ZoomInfo, etc.).</p>
+      </div>
+      <div class="bg-white rounded-xl shadow p-6 text-center">
+        <div class="w-16 h-16 mx-auto mb-4 flex items-center justify-center">
+          <img src="email-marketing.png" alt="Email Marketing Icon" class="w-12 h-12">
+        </div>
+        <h3 class="font-semibold text-xl">Step 2: We Build Campaigns</h3>
+        <p class="mt-2 text-gray-600">We set up your sending domain, craft email copy, and configure your cold email tool.</p>
+      </div>
+      <div class="bg-white rounded-xl shadow p-6 text-center">
+        <div class="w-16 h-16 mx-auto mb-4 flex items-center justify-center">
+          <img src="user-engagement.png" alt="User Engagement Icon" class="w-12 h-12">
+        </div>
+        <h3 class="font-semibold text-xl">Step 3: Leads on Autopilot</h3>
+        <p class="mt-2 text-gray-600">We run the campaigns and deliver interested replies and booked calls directly to you.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 bg-gray-100">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold mb-8">Simple, Transparent Pricing</h2>
+      <div class="bg-white shadow rounded-xl p-8">
+        <p class="text-2xl font-semibold">Setup Fee: <span class="text-[var(--primary)]">$300</span></p>
+        <p class="mt-2 text-gray-600">Covers campaign strategy, technical setup & email copywriting.</p>
+        <p class="mt-6 text-2xl font-semibold">Monthly Retainer: <span class="text-[var(--primary)]">$1500</span></p>
+        <p class="mt-2 text-gray-600">Ongoing campaign management & optimization.</p>
+        <a href="#contact" class="mt-8 hidden md:inline-block bg-[var(--primary)] text-white px-8 py-3 rounded-lg shadow hover:opacity-90">
+          Start Today
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="py-16 max-w-3xl mx-auto px-6">
+    <h2 class="text-3xl font-bold text-center mb-6">Book a Free Strategy Call</h2>
+    <p class="hidden md:block text-center text-gray-600 mb-8">Fill out the form below and we'll reach out to discuss your lead generation goals.</p>
+
+    <form name="contact" method="POST" data-netlify="true" action="/thank-you.html" class="hidden md:block bg-white rounded-xl shadow p-8 space-y-4">
+      <input type="hidden" name="form-name" value="contact">
+      <p class="hidden">
+        <label>Don't fill this out if you're human: <input name="bot-field"></label>
+      </p>
+
+      <input type="text" name="name" placeholder="Your Name" class="w-full border rounded-lg p-3" required>
+      <input type="email" name="email" placeholder="Your Email" class="w-full border rounded-lg p-3" required>
+      <input type="text" name="company" placeholder="Your Company" class="w-full border rounded-lg p-3">
+      <textarea name="message" placeholder="Your Message" class="w-full border rounded-lg p-3" rows="4"></textarea>
+
+      <button type="submit" class="w-full bg-[var(--primary)] text-white py-3 rounded-lg shadow hover:opacity-90">
+        Submit
+      </button>
+    </form>
+  </section>
+
+  <footer class="bg-gray-800 text-gray-300 py-6 text-center text-sm">
+    <p>&copy; 2025 GetFitech. All rights reserved.</p>
+  </footer>
+
+  <div class="scroll-to-top" id="scrollToTop">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="18,15 12,9 6,15"></polyline>
+    </svg>
+  </div>
+
+  <div class="fixed bottom-0 left-0 w-full bg-white border-t border-gray-200 p-3 md:hidden z-50">
+    <a href="https://calendly.com/getfitech-media"
+       class="block w-full text-center bg-[var(--primary)] text-white font-semibold py-3 rounded-lg shadow-lg hover:opacity-90 transition">
+       📞 Book a Free Call
+    </a>
+  </div>
+
+  <script>
+    // Scroll to top functionality
+    const scrollToTopBtn = document.getElementById('scrollToTop');
+    
+    // Show/hide scroll to top button
+    window.addEventListener('scroll', function() {
+      if (window.pageYOffset > 300) {
+        scrollToTopBtn.classList.add('show');
+      } else {
+        scrollToTopBtn.classList.remove('show');
+      }
+    });
+    
+    // Scroll to top when clicked
+    scrollToTopBtn.addEventListener('click', function() {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
+  </script>
+
+</body>
+</html>

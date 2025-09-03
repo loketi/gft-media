@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="refresh" content="5;url=https://getfitech.co.ke">
+  <title>Thank You - GetFitech</title>
+  <link rel="icon" type="image/png" href="https://getfitech.co.ke/img/getfitech-logo.ico">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root {
+      --primary: #c0545c;
+    }
+    
+    /* Smooth scrolling */
+    html {
+      scroll-behavior: smooth;
+    }
+
+    /* Animation for the checkmark */
+    .checkmark {
+      animation: scaleIn 0.5s ease-in-out;
+    }
+
+    @keyframes scaleIn {
+      0% {
+        transform: scale(0);
+        opacity: 0;
+      }
+      50% {
+        transform: scale(1.1);
+        opacity: 1;
+      }
+      100% {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+
+    /* Fade in animation for content */
+    .fade-in {
+      animation: fadeInUp 0.8s ease-out;
+    }
+
+    @keyframes fadeInUp {
+      0% {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Pulse animation for CTA button */
+    .pulse-button {
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0% {
+        box-shadow: 0 0 0 0 rgba(192, 84, 92, 0.4);
+      }
+      70% {
+        box-shadow: 0 0 0 10px rgba(192, 84, 92, 0);
+      }
+      100% {
+        box-shadow: 0 0 0 0 rgba(192, 84, 92, 0);
+      }
+    }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- Header -->
+  <header class="bg-white shadow">
+    <div class="max-w-6xl mx-auto flex items-center justify-between p-4">
+      
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="min-h-screen flex items-center justify-center py-16 px-6">
+    <div class="max-w-2xl mx-auto text-center">
+      
+      <!-- Success Icon -->
+      <div class="checkmark w-20 h-20 mx-auto mb-8 bg-green-100 rounded-full flex items-center justify-center">
+        <svg class="w-10 h-10 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+        </svg>
+      </div>
+
+      <!-- Main Message -->
+      <div class="fade-in">
+        <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+          Thank You!
+        </h1>
+        
+        <p class="text-xl md:text-2xl text-gray-600 mb-8">
+          Your message has been received successfully.
+        </p>
+
+        <!-- What happens next -->
+        <div class="bg-white rounded-xl shadow-lg p-8 mb-8">
+          <h2 class="text-2xl font-semibold text-[var(--primary)] mb-6">What Happens Next?</h2>
+          
+          <div class="space-y-4 text-left">
+            <div class="flex items-start space-x-4">
+              <div class="flex-shrink-0 w-8 h-8 bg-[var(--primary)] text-white rounded-full flex items-center justify-center font-semibold text-sm">
+                1
+              </div>
+              <div>
+                <h3 class="font-semibold text-lg">We'll Review Your Request</h3>
+                <p class="text-gray-600">Our team will carefully review your information and lead generation goals.</p>
+              </div>
+            </div>
+            
+            <div class="flex items-start space-x-4">
+              <div class="flex-shrink-0 w-8 h-8 bg-[var(--primary)] text-white rounded-full flex items-center justify-center font-semibold text-sm">
+                2
+              </div>
+              <div>
+                <h3 class="font-semibold text-lg">Schedule Your Free Call</h3>
+                <p class="text-gray-600">We'll reach out within 24 hours to schedule your free strategy session.</p>
+              </div>
+            </div>
+            
+            <div class="flex items-start space-x-4">
+              <div class="flex-shrink-0 w-8 h-8 bg-[var(--primary)] text-white rounded-full flex items-center justify-center font-semibold text-sm">
+                3
+              </div>
+              <div>
+                <h3 class="font-semibold text-lg">Create Your Custom Strategy</h3>
+                <p class="text-gray-600">We'll discuss your specific needs and create a tailored cold email outreach plan.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Expected Response Time -->
+        <div class="bg-gradient-to-r from-[var(--primary)] to-rose-700 text-white rounded-xl p-6 mb-8">
+          <div class="flex items-center justify-center space-x-3">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+            </svg>
+            <span class="text-lg font-semibold">Expected Response: Within 24 Hours</span>
+          </div>
+        </div>
+
+        <!-- Redirect Notice -->
+        <div class="bg-blue-50 border border-blue-200 rounded-xl p-4 mb-8">
+          <div class="flex items-center justify-center space-x-2">
+            <svg class="w-5 h-5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+            </svg>
+            <span class="text-blue-800">You will be redirected to our homepage in <span id="countdown">5</span> seconds</span>
+          </div>
+        </div>
+
+        <!-- CTA Buttons -->
+        <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+          
+          
+          
+        </div>
+
+        <!-- Additional Info -->
+        <div class="mt-12 text-gray-500 text-sm">
+          <p>Questions? Email us at <a href="mailto:hello@getfitech.co.ke" class="text-[var(--primary)] hover:underline">hello@getfitech.co.ke</a></p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-gray-300 py-6 text-center text-sm">
+    <p>&copy; 2025 GetFitech. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Parallax effect
+    function updateParallax() {
+      const scrollY = window.pageYOffset;
+      const parallaxBg = document.querySelector('.parallax-bg');
+      const parallaxOverlay = document.querySelector('.parallax-overlay');
+      
+      if (parallaxBg) {
+        parallaxBg.style.transform = `translateY(${scrollY * 0.5}px)`;
+      }
+      if (parallaxOverlay) {
+        parallaxOverlay.style.transform = `translateY(${scrollY * 0.3}px) rotate(${scrollY * 0.1}deg)`;
+      }
+    }
+
+    // Mouse movement parallax
+    document.addEventListener('mousemove', (e) => {
+      const mouseX = e.clientX / window.innerWidth;
+      const mouseY = e.clientY / window.innerHeight;
+      
+      const parallaxBg = document.querySelector('.parallax-bg');
+      const parallaxOverlay = document.querySelector('.parallax-overlay');
+      
+      if (parallaxBg) {
+        parallaxBg.style.transform = `translate(${mouseX * 20}px, ${mouseY * 20}px)`;
+      }
+      if (parallaxOverlay) {
+        parallaxOverlay.style.transform = `translate(${mouseX * -10}px, ${mouseY * -10}px)`;
+      }
+    });
+
+    // Countdown timer and redirect
+    let countdown = 5;
+    const countdownElement = document.getElementById('countdown');
+    
+    const timer = setInterval(() => {
+      countdown--;
+      countdownElement.textContent = countdown;
+      
+      if (countdown <= 0) {
+        clearInterval(timer);
+        window.location.href = 'https://getfitech.co.ke';
+      }
+    }, 1000);
+    
+    // Fallback redirect in case JavaScript is disabled or fails
+    setTimeout(() => {
+      window.location.href = 'https://getfitech.co.ke';
+    }, 5000);
+
+    // Scroll event for parallax
+    window.addEventListener('scroll', updateParallax);
+    
+    // Initial parallax setup
+    updateParallax();
+  </script>
+
+</body>
+</html>
